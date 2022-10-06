@@ -7,6 +7,9 @@ int main () {
   int n;
   cout << "Enter the total amount of numbers\n";
   cin >> n;
+  if (n <= 0) {
+    exit(0);
+  }
   
   cout << getSum(n) << endl;
   return 0;
